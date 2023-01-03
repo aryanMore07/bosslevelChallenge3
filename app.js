@@ -21,7 +21,7 @@ mongoose.set('strictQuery', false);
 
 
 
-mongoose.connect(process.env.MONGODB_URL, {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://aryan:aryan@aryandb.72kyzaf.mongodb.net/test', {useNewUrlParser: true});
 
 
 const postSchema = {
