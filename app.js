@@ -19,9 +19,9 @@ app.use(express.static("public"));
 
 mongoose.set('strictQuery', false);
 
-const dbConnection = process.env.MONGODB_URL
 
-mongoose.connect(dbConnection, {useNewUrlParser: true});
+
+mongoose.connect(process.env.MONGODB_URL, {useNewUrlParser: true});
 
 
 const postSchema = {
